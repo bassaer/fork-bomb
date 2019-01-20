@@ -19,3 +19,20 @@ vagrant   2684  0.0  0.7 117184  3788 pts/2    S    12:30   0:00              \_
 vagrant   2685  0.0  0.4 117184  2300 pts/2    S    12:30   0:00              |   \_ python a.py
 vagrant   2695  1.0  0.2 110356  1128 pts/2    R+   12:30   0:00              \_ ps auxf
 ```
+
+```
+❯ python b.py &
+[1] 2973
+Traceback (most recent call last):
+  File "b.py", line 4, in <module>
+    os.fork()
+OSError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "b.py", line 4, in <module>
+    os.fork()
+OSError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "b.py", line 4, in <module>
+    os.fork()
+OSError: [Errno 11] Resource temporarily unavailable
+```
